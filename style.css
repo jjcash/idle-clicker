@@ -1,7 +1,37 @@
-body {
-    font-family: sans-serif;
+:root {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --accent-color: #4CAF50;
+    --button-bg: #333333;
+    --button-hover: #555555;
+  }  
+
+  body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 50px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  button:hover {
+    background-color: var(--button-hover);
+  }
+  
+  button:active {
+    transform: scale(0.95);
   }
   
   #reset {
@@ -25,6 +55,16 @@ body {
     margin: 10px;
     padding: 5px 10px;
   }
+
+  #prestige {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+  }
+  
+  #prestige:hover {
+    box-shadow: 0 0 10px gold;
+  }  
 
 /* Coin gain animation */
 @keyframes coinGain {
